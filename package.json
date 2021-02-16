@@ -1,8 +1,8 @@
 {
   "name": "js-space-shooter",
-  "version": "1.0.0",
+  "version": "1.0.0", 
   "description": "this is a space shooter game implemented in javascript and phaser 3",
-  "scripts": {
+  "scripts": {    
     "test": "jest",
     "test:watch": "jest --watchAll --testPathPattern=__tests__/api.test.js",
     "eslint": "eslint .",
@@ -11,7 +11,8 @@
     "linters": "npm run fix && npm run stylelint && npm run eslint && echo '🎉 All test pass 🎉'",
     "build": "webpack --mode=production",
     "watch": "webpack --watch --mode=development",
-    "dev": "webpack-dev-server --mode=development"
+    "dev": "webpack-dev-server --mode=development",
+    "start": "npm run build && webpack-dev-server --host=0.0.0.0 --port=$PORT --disable-host-check"
   },
   "repository": {
     "type": "git",
@@ -58,5 +59,7 @@
     "phaser": "^3.24.1",
     "phaser3-rex-plugins": "^1.1.31",
     "popper.js": "^1.16.1"
-  }
+  },
+  "heroku-run-build-script": true
+  
 }
