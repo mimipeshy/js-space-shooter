@@ -54,12 +54,13 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bootstrap": "^4.5.2",
+    "cacache": "^15.0.5",
     "express": "^4.17.1",
     "jquery": "^3.5.1",
+    "node-fetch": "^2.6.1",
     "phaser": "^3.24.1",
     "phaser3-rex-plugins": "^1.1.31",
-    "popper.js": "^1.16.1",
-    "node-fetch": "^2.6.1"
+    "popper.js": "^1.16.1"
   },
   "heroku-run-build-script": true
 }
