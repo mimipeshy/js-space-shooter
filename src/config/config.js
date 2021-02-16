@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 import 'phaser';
-const SCREEN_WIDTH= 800;
+
+const SCREEN_WIDTH = 800;
 const SCREEN_HEIGHT = 600;
 export default {
   type: Phaser.AUTO,

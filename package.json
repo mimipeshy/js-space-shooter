@@ -1,8 +1,7 @@
 {
-  "name": "js-shooter-game",
+  "name": "js-space-shooter",
   "version": "1.0.0",
-  "description": "node_modules/",
-  "private": true,
+  "description": "this is a space shooter game implemented in javascript and phaser 3",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll --testPathPattern=__tests__/api.test.js",
@@ -16,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cristianCeamatu/template-eslint-stylelint.git"
+    "url": "git+https://github.com/mimipeshy/js-space-shooter.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cristianCeamatu/template-eslint-stylelint/issues"
+    "url": "https://github.com/mimipeshy/js-space-shooter/issues"
   },
-  "homepage": "https://github.com/cristianCeamatu/template-eslint-stylelint#readme",
+  "homepage": "https://github.com/mimipeshy/js-space-shooter#readme",
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
