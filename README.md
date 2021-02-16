@@ -86,12 +86,11 @@ Most important, enjoy the app!<br>
 
 ## Authors
 
-👤 **Cristian Viorel Ceamatu**
+👤 **Peris Ndanu**
 
-- Email: [cristian.ceamatu@gmail.com](cristian.ceamatu@gmail.com)
-- Github: [https://github.com/cristianCeamatu](https://github.com/cristianCeamatu)
-- Twitter: [https://twitter.com/CristianCeamatu](https://twitter.com/CristianCeamatu)
-- Linkedin: [https://www.linkedin.com/in/ceamatu-cristian/](https://www.linkedin.com/in/ceamatu-cristian/)
+- Github: [https://github.com/mimipeshy](https://github.com/mimipeshy)
+- Twitter: [https://twitter.com/pygirl54](https://twitter.com/pygirl54)
+- Linkedin: [https://www.linkedin.com/in/peris-ndanu/](https://www.linkedin.com/in/peris-ndanu/)
 
 ## 🤝 Contributing
 
