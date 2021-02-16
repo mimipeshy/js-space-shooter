@@ -1,4 +1,6 @@
 /* eslint-disable prefer-promise-reject-errors, no-unused-vars */
+import regeneratorRuntime from 'regenerator-runtime';
+
 import axios from 'axios';
 import api from '../src/utils/api';
 
@@ -9,11 +11,11 @@ describe('getScores', () => {
     data: {
       result: [
         {
-          user: 'test',
+          user: 'Cris2',
           score: 36,
         },
         {
-          user: 'admin',
+          user: 'Cris',
           score: 26,
         },
       ],
@@ -24,11 +26,11 @@ describe('getScores', () => {
     const result = await api.getScores('https://www.google.com');
     expect(result).toStrictEqual([
       {
-        user: 'test',
+        user: 'Cris2',
         score: 36,
       },
       {
-        user: 'admin',
+        user: 'Cris',
         score: 26,
       },
     ]);
@@ -38,11 +40,11 @@ describe('getScores', () => {
     const result = await api.getScores('https://www.google.com');
     expect(result).toStrictEqual([
       {
-        user: 'test',
+        user: 'Cris2',
         score: 36,
       },
       {
-        user: 'admin',
+        user: 'Cris',
         score: 26,
       },
     ]);
@@ -58,7 +60,7 @@ describe('submitScore', () => {
   global.fetch = jest.fn(() => Promise.resolve({
     json: () => Promise.resolve({ data: 'Score succesffully submitted' }),
   }));
-  const user = 'test';
+  const user = 'Cris';
   const score = 20;
   const uri = 'http://www.google.com';
 

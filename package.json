@@ -25,7 +25,7 @@
   "homepage": "https://github.com/mimipeshy/js-space-shooter#readme",
   "devDependencies": {
     "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-env": "^7.12.16",
     "@testing-library/jest-dom": "^5.11.4",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.1",
