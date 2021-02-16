@@ -4,15 +4,13 @@
   "description": "this is a space shooter game implemented in javascript and phaser 3",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watchAll --testPathPattern=__tests__/api.test.js",
     "eslint": "eslint .",
     "stylelint": "stylelint \"**/*.scss\"",
     "fix": "stylelint --fix \"**/*.scss\" && eslint . --fix",
     "linters": "npm run fix && npm run stylelint && npm run eslint && echo '🎉 All test pass 🎉'",
     "build": "webpack --mode=production",
     "watch": "webpack --watch --mode=development",
-    "dev": "webpack-dev-server --mode=development",
-    "start": "npm run build && webpack-dev-server --host=0.0.0.0 --port=$PORT --disable-host-check"
+    "dev": "webpack-dev-server --mode=development"
   },
   "repository": {
     "type": "git",
@@ -36,7 +34,6 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
     "file-loader": "^6.1.0",
-    "html-webpack-plugin": "^5.1.0",
     "jest": "^26.5.3",
     "node-sass": "^4.14.1",
     "regenerator-runtime": "^0.13.7",
@@ -52,15 +49,12 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
-    "cacache": "^15.0.5",
     "express": "^4.17.1",
     "jquery": "^3.5.1",
-    "node-fetch": "^2.6.1",
     "phaser": "^3.24.1",
     "phaser3-rex-plugins": "^1.1.31",
     "popper.js": "^1.16.1"
-  },
-  "heroku-run-build-script": true
+  }
 }
