@@ -1,10 +1,11 @@
 /* eslint-disable no-undef */
 import 'phaser';
-
+const SCREEN_WIDTH= 800;
+const SCREEN_HEIGHT = 600;
 export default {
   type: Phaser.AUTO,
-  width: 800,
-  height: 600,
+  width: SCREEN_WIDTH,
+  height: SCREEN_HEIGHT,
   autoCenter: Phaser.Scale.CENTER_BOTH,
   backgroundColor: 'black',
   parent: 'phaser-container',
