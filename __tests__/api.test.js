@@ -1,6 +1,4 @@
 /* eslint-disable prefer-promise-reject-errors, no-unused-vars */
-import regeneratorRuntime from 'regenerator-runtime';
-
 import axios from 'axios';
 import api from '../src/utils/api';
 

@@ -128,7 +128,7 @@ export default class PreloadScene extends Phaser.Scene {
 
   create() {
     this.add.image(this.cameras.main.width - 40, 40, 'logo');
-    this.logoText = this.add.text(this.cameras.main.width - 70, 40, 'Alien Shooters', {
+    this.logoText = this.add.text(this.cameras.main.width - 70, 40, 'Microverse Fights', {
       fontSize: '24px',
       fill: '#FFFFFF',
     });
