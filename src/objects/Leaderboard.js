@@ -11,7 +11,7 @@ export default class Leaderboard extends Phaser.GameObjects.Text {
 
   async getScores() {
     try {
-      this.results = await axios(`https://cors-anywhere.herokuapp.com/${this.uri}`);
+      this.results= await axios(this.uri);
       this.scores = this.results.data.result;
       let display = 'Leaderboard';
 
@@ -30,8 +30,8 @@ export default class Leaderboard extends Phaser.GameObjects.Text {
     const data = { user, score };
     this.scene.scoreSubmittedText.setText('Submitting your score...');
     try {
-      this.result = await fetch(`https://cors-anywhere.herokuapp.com/${this.uri}`, {
-        method: 'post',
+      this.result= await fetch(this.uri,{ 
+      method: 'post',
         cors: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),

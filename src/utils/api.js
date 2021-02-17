@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const getScores = async (uri) => {
   try {
-    const results = await axios.get(`https://cors-anywhere.herokuapp.com/${uri}`);
+    const results = await axios.get(uri);
     let scores = results.data.result;
 
     scores = [...scores].sort((a, b) => b.score - a.score).slice(0, 15);
@@ -15,8 +15,8 @@ const getScores = async (uri) => {
 const submitScore = async (uri, score, user = 'unnamed') => {
   const data = { user, score };
   try {
-    let result = await fetch(`https://cors-anywhere.herokuapp.com/${uri}`, {
-      method: 'post',
+    let result= await fetch(uri,{  
+    method: 'post',
       cors: 'no-cors',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
