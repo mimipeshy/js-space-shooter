@@ -6,7 +6,7 @@ export default class Leaderboard extends Phaser.GameObjects.Text {
     super(scene, x, y, text, { color: 'white', fontSize: '18px' });
     scene.add.existing(this);
     this.scene = scene;
-    this.uri = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/mKHmBxpV0Vks3xMiBZdr/scores';
+    this.uri = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdi/scores';
   }
 
   async getScores() {
@@ -15,7 +15,7 @@ export default class Leaderboard extends Phaser.GameObjects.Text {
       this.scores = this.results.data.result;
       let display = 'Leaderboard';
 
-      this.scores = [...this.scores].sort((a, b) => b.score - a.score).slice(0, 15);
+      this.scores = [...this.scores].sort((a, b) => b.score - a.score).slice(0, 3);
       this.scores.forEach((score, i) => {
         display += `\n${i + 1}.${score.user} ${score.score}`;
       });
