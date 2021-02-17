@@ -15,8 +15,8 @@ const getScores = async (uri) => {
 const submitScore = async (uri, score, user = 'unnamed') => {
   const data = { user, score };
   try {
-    let result= await fetch(uri,{  
-    method: 'post',
+    let result = await fetch(uri, {
+      method: 'post',
       cors: 'no-cors',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
